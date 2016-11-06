@@ -19,6 +19,7 @@ public class InputManager : MonoBehaviour {
             if (horiz != 0)
             {
                 if (horiz == 1.0f) GameObject.Find("Cover").GetComponent<DoorControl>().moveRight();
+                if (horiz == -1.0f) GameObject.Find("Cover").GetComponent<DoorControl>().moveLeft();
             }
         }
 

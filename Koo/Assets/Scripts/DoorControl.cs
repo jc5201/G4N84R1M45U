@@ -35,4 +35,12 @@ public class DoorControl : MonoBehaviour {
         foreach (GameObject obj in Contents) obj.SetActive(false);
         target += 60;
     }
+
+    public void moveLeft()
+    {
+        status = Status.move;
+        foreach (GameObject obj in Contents) obj.SetActive(false);
+        target -= 60;
+    }
+
 }
